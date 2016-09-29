@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tampilan Login</string>
+    <string name="login">AYO LOGIN DULU</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="tombol">Login</string>
+</resources>

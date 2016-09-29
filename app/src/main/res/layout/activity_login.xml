@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="muflazuardi.tampilanlogin.login">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login"
+        android:id="@+id/login"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/username"
+        android:id="@+id/username"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="36dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/password"
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:textSize="20dp"
+        android:id="@+id/editUser"
+        android:layout_alignBottom="@+id/username"
+        android:layout_toRightOf="@+id/username"
+        android:layout_alignRight="@+id/editPass"
+        android:layout_alignEnd="@+id/editPass" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="4"
+        android:textSize="20dp"
+        android:id="@+id/editPass"
+        android:layout_below="@+id/editUser"
+        android:layout_toRightOf="@+id/username"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tombol"
+            android:id="@+id/button"
+            android:width="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnRegis"
+            android:layout_toStartOf="@+id/btnRegis"
+            android:layout_weight="1.33"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btnRegis"
+            android:layout_alignBottom="@+id/button"
+            android:layout_alignRight="@+id/editPass"
+            android:layout_alignEnd="@+id/editPass" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN WITH FACEBOOK"
+        android:id="@+id/button2"
+        android:background="#6b87a4"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN WITH GOOGLE+"
+        android:id="@+id/button3"
+        android:background="#c94848"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN WITH TWITTER"
+        android:id="@+id/button4"
+        android:background="#6272ee"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep me sign in"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+</RelativeLayout>
